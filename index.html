@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Navigation Bar</title>
+  <style>
+    /* Styling the Navigation Bar */
+    body {
+      margin: 0; /* Remove default margin */
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between; /* Space items evenly */
+      align-items: center; /* Vertically align items */
+      background-color: #333; /* Dark background */
+      padding: 0.5rem 1rem; /* Add spacing */
+      position: fixed; /* Stay at the top */
+      top: 0;
+      width: 100%; /* Full width */
+      z-index: 1000; /* Stay above other content */
+    }
+
+    .navbar a {
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+      padding: 0.5rem 1rem; /* Add spacing */
+      transition: background 0.3s; /* Smooth hover effect */
+    }
+
+    .navbar a:hover {
+      background-color: #575757; 
+      border: solid #575757;
+      border-radius: 15px;/* Hover effect */
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem; /* Larger logo text */
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex; /* Align links horizontally */
+      gap: 1rem; /* Space between links */
+    }
+    
+    /* Add some spacing for the content */
+    .content {
+      margin-top: 3rem; /* Offset for the fixed navbar */
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">MyWebsite</div>
+    <div class="nav-links">
+      <a href="about.html">About me</a>
+      <a href="secrets.html">Secrets</a>
+      <a href="dreams.html">Dreams</a>
+      <a href="other.html">Other</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of your page.</p>
+  </div>
+</body>
+</html>
