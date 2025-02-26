@@ -1,74 +1,90 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top Navigation Bar</title>
+  <title>Cozy Navigation Bar</title>
   <style>
-    /* Styling the Navigation Bar */
+    /* Cozy Styling */
     body {
-      margin: 0; /* Remove default margin */
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefaf0; /* Soft warm background */
+      color: #4a4a4a; /* Gentle text color */
     }
 
     .navbar {
       display: flex;
-      justify-content: space-between; /* Space items evenly */
-      align-items: center; /* Vertically align items */
-      background-color: #333; /* Dark background */
-      padding: 0.5rem 1rem; /* Add spacing */
-      position: fixed; /* Stay at the top */
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(135deg, #f4d9c8, #e6b8a2); /* Soft gradient */
+      padding: 0.8rem 1.5rem;
+      position: fixed;
       top: 0;
-      width: 100%; /* Full width */
-      z-index: 1000; /* Stay above other content */
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border-radius: 0 0 12px 12px; /* Soft edges */
     }
 
     .navbar a {
-      color: white; /* Text color */
-      text-decoration: none; /* Remove underline */
-      padding: 0.5rem 1rem; /* Add spacing */
-      transition: background 0.3s; /* Smooth hover effect */
+      color: #5a3e36; /* Warm brown text */
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      font-weight: 500;
     }
 
     .navbar a:hover {
-      background-color: #575757; 
-      border: solid #575757;
-      border-radius: 15px;/* Hover effect */
+      background: rgba(255, 255, 255, 0.5);
+      transform: scale(1.1); /* Smooth zoom effect */
     }
 
     .navbar .logo {
-      font-size: 1.5rem; /* Larger logo text */
+      font-size: 1.8rem;
       font-weight: bold;
+      color: #5a3e36;
+      font-family: 'Georgia', serif;
     }
 
     .nav-links {
-      display: flex; /* Align links horizontally */
-      gap: 1rem; /* Space between links */
+      display: flex;
+      gap: 1.2rem;
     }
-    
-    /* Add some spacing for the content */
+
     .content {
-      margin-top: 3rem; /* Offset for the fixed navbar */
-      padding: 1rem;
+      margin-top: 5rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #5a3e36;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
+
   <div class="navbar">
-    <div class="logo">MyWebsite</div>
+    <div class="logo">My Cozy Space ☕</div>
     <div class="nav-links">
-      <a href="about.html">About me</a>
+      <a href="about.html">About Me</a>
       <a href="secrets.html">Secrets</a>
       <a href="dreams.html">Dreams</a>
       <a href="other.html">Other</a>
     </div>
   </div>
 
-  <!-- Page Content -->
   <div class="content">
-    <h1>Welcome to My Website</h1>
-    <p>This is the main content of your page.</p>
+    <h1>Welcome to My Cozy Corner</h1>
+    <p>Relax, take a deep breath, and enjoy your stay. ☕🌿</p>
   </div>
+
 </body>
 </html>
